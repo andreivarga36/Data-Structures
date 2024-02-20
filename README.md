@@ -1,1 +1,1 @@
-# Int.Array
+The C# Data Structures repository contains manual implementations of essential data structures (IntArray, SortedIntArray, List, SortedList, and ListAsReadOnly) with comprehensive unit tests, ensuring reliability. Ideal for algorithm development, data storage optimization and performance enhancement
