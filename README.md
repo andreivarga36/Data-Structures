@@ -1,29 +1,7 @@
-# IntArray
-The IntArray class provides a manual implementation of an array data structure for manipulating sequences of integers in C#. It offers essential functionalities such as adding, removing, searching, and inserting elements, along with array resizing operations
+This project contains few implementations of fundamental data structures in C#.
 
----
+  Each class within this project emphasizes modularity, performance, and usability. Key features includes manual implementation, generic types for flexibility and comprehensive unit tests using Xunit. 
+  
+  Functionalities like array manipulation, sorting algorithms, and read-only access are included. Exception handling ensures proper error management and safe usage of data structures.
 
-# SortedIntArray 
-This class extends the functionality of the IntArray class by providing an implementation of an automatically sorted array. It ensures that elements are kept in sorted order immediately after their addition or insertion into the array
-
----
-
-# List<T>
-The List<T> class provides a manual implementation of a generic list which is compatible with the IList<T> interface. This implementation also includes exception handling to ensure proper and safe usage of list operations
-
----
-
-# SortedList<T>
-The SortedList<T> class extends the functionality of the List<T> class by providing a sorted collection of elements. It ensures that elements are maintained in sorted order, based on their natural ordering defined by the IComparable<T> interface. This implementation leverages the IComparable<T> interface to compare elements and enforce the sorted order efficiently
-
---- 
-
-# ReadOnlyList<T>
-The ReadOnlyList<T> class provides read-only access to the elements of an existing list, implementing the IList<T>. It ensures that elements cannot be modified once the list is initialized, providing a safe and immutable view of the underlying list. Also, supports efficient enumeration of elements through the IEnumerable<T> interface, allowing traversal without modification
-
----
-
-# ObjectEnumerator 
-The ObjectEnumerator class provides a simple implementation of an enumerator for iterating through a list of objects. This implementation is suitable for scenarios where manual enumeration of objects is required, providing a straightforward and efficient mechanism for iterating through collections
-
----
+  Technologies used comprise C#, Xunit for unit testing and object-oriented programming principles. Generics are leveraged for handling various data types and sorting algorithms maintain sorted order efficiently.
