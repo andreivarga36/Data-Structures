@@ -1,4 +1,4 @@
-namespace IntArray
+namespace DataStructures
 {
     public class IntArray
     {
