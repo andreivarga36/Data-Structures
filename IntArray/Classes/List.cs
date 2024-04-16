@@ -1,6 +1,6 @@
 ﻿using System.Collections;
 
-namespace IntArray
+namespace DataStructures.Classes
 {
     public class List<T> : IList<T>
     {
@@ -8,7 +8,7 @@ namespace IntArray
 
         public List()
         {
-            this.list = new T[4];
+            list = new T[4];
         }
 
         public virtual int Count { get; private set; }
@@ -133,7 +133,7 @@ namespace IntArray
 
         private void ValidateArrayAvailableSpace(T[] array, int arrayIndex)
         {
-            if (Count <= (array.Length - arrayIndex))
+            if (Count <= array.Length - arrayIndex)
             {
                 return;
             }

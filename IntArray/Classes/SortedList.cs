@@ -1,4 +1,4 @@
-﻿namespace IntArray
+﻿namespace DataStructures.Classes
 {
     public class SortedList<T> : List<T>
         where T : IComparable<T>

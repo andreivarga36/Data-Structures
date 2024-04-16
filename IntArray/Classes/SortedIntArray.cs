@@ -1,4 +1,4 @@
-﻿namespace IntArray
+﻿namespace DataStructures.Classes
 {
     public class SortedIntArray : IntArray
     {

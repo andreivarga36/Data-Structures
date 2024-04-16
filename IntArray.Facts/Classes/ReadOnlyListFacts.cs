@@ -1,13 +1,14 @@
-﻿using Xunit;
+﻿using DataStructures.Classes;
+using Xunit;
 
-namespace IntArray
+namespace DataStructuresFacts.Classes
 {
-    public class ListAsReadOnlyFacts
+    public class ReadOnlyListFacts
     {
         [Fact]
         public void Add_ListIsReadOnly_ShouldReturnExpectedResult()
         {
-            var list = new List<int>() { 1, 2, 3, 4 };
+            var list = new DataStructures.Classes.List<int>() { 1, 2, 3, 4 };
             var listAsReadOnly = new ReadOnlyList<int>(list);
 
             Assert.True(listAsReadOnly.IsReadOnly);
@@ -17,7 +18,7 @@ namespace IntArray
         [Fact]
         public void Set_ListIsReadOnly_ShouldReturnExpectedResult()
         {
-            var list = new List<int>() { 10, 20, 30 };
+            var list = new DataStructures.Classes.List<int>() { 10, 20, 30 };
             var listAsReadOnly = new ReadOnlyList<int>(list);
 
             Assert.Throws<NotSupportedException>(() => listAsReadOnly[1] = 15);
@@ -26,7 +27,7 @@ namespace IntArray
         [Fact]
         public void Remove_ListIsReadOnly_ShouldReturnExpectedResult()
         {
-            var list = new List<string>() { "car", "house", "iron" };
+            var list = new DataStructures.Classes.List<string>() { "car", "house", "iron" };
             var listAsReadOnly = new ReadOnlyList<string>(list);
 
             Assert.Throws<NotSupportedException>(() => listAsReadOnly.Remove("iron"));
@@ -35,7 +36,7 @@ namespace IntArray
         [Fact]
         public void Insert_OwnerCanModifyList_ShouldReturnExpectedResult()
         {
-            var list = new List<int>() { 100, 400, 600, 800 };
+            var list = new DataStructures.Classes.List<int>() { 100, 400, 600, 800 };
             var listAsReadOnly = new ReadOnlyList<int>(list);
 
             list.Add(999);
@@ -47,7 +48,7 @@ namespace IntArray
         [Fact]
         public void CopyTo_ListIsCopied_ShouldReturnExpectedResult()
         {
-            var list = new List<char>() { 'a', 'b', 'c', 'd', };
+            var list = new DataStructures.Classes.List<char>() { 'a', 'b', 'c', 'd', };
             var charArray = new char[4];
             list.CopyTo(charArray, 0);
 
@@ -57,7 +58,7 @@ namespace IntArray
         [Fact]
         public void IndexProperty_InvalidIndex_ShouldReturnExpectedResult()
         {
-            var list = new List<int>() { 1, 2, 3 };
+            var list = new DataStructures.Classes.List<int>() { 1, 2, 3 };
             var readOnlyList = new ReadOnlyList<int>(list);
 
             Assert.Throws<ArgumentOutOfRangeException>(() => readOnlyList[-1]);

@@ -1,6 +1,7 @@
+using DataStructures.Classes;
 using Xunit;
 
-namespace IntArray
+namespace DataStructuresFacts.Classes
 {
     public class IntArrayFacts
     {

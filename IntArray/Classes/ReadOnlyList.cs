@@ -1,6 +1,6 @@
 ﻿using System.Collections;
 
-namespace IntArray
+namespace DataStructures.Classes
 {
     public class ReadOnlyList<T> : IList<T>
     {

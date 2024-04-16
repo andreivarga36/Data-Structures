@@ -1,6 +1,7 @@
-﻿using Xunit;
+﻿using DataStructures.Classes;
+using Xunit;
 
-namespace IntArray
+namespace DataStructuresFacts.Classes
 {
     public class SortedIntArrayFacts
     {
@@ -44,7 +45,7 @@ namespace IntArray
 
             sortedArray[3] = 5;
 
-            int[] expectedArray = { 2, 4, 6, 8, 10, 0, 0 , 0 };
+            int[] expectedArray = { 2, 4, 6, 8, 10, 0, 0, 0 };
 
             Assert.True(AreEqual(sortedArray, expectedArray));
 
@@ -130,7 +131,7 @@ namespace IntArray
             sortedArray.Add(200);
             sortedArray.Insert(1, 44);
 
-            int[] expectedResult = {45, 100, 200, 0 };
+            int[] expectedResult = { 45, 100, 200, 0 };
 
             Assert.True(AreEqual(sortedArray, expectedResult));
 

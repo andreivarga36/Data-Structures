@@ -1,6 +1,7 @@
-﻿using Xunit;
+﻿using DataStructures.Classes;
+using Xunit;
 
-namespace IntArray
+namespace DataStructuresFacts.Classes
 {
     public class SortedListFacts
     {
@@ -79,7 +80,7 @@ namespace IntArray
         {
             var sortedList = new SortedList<char> { 'a', 'e', 'i', 'o' };
 
-            Assert.Throws < ArgumentOutOfRangeException>(() => sortedList.Insert(4, 'u'));
+            Assert.Throws<ArgumentOutOfRangeException>(() => sortedList.Insert(4, 'u'));
         }
 
         [Fact]
@@ -122,7 +123,7 @@ namespace IntArray
         [Fact]
         public void Insert_InsertionOnLastIndex_ShouldReturnExpectedResult()
         {
-            var sortedList = new SortedList<string>() { "blue", "green", "yellow"};
+            var sortedList = new SortedList<string>() { "blue", "green", "yellow" };
             sortedList.Insert(2, "red");
 
             Assert.Equal("red", sortedList[2]);
