@@ -8,6 +8,6 @@
 
   ## Documentation
   
-    - [C# Arrays](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/arrays)
-    - [Generic Collections: List<T>](https://learn.microsoft.com/en-us/dotnet/api/system.collections.generic.list-1?view=net-8.0)
-    - [Enumeratos in C#](https://www.c-sharpcorner.com/article/enumerators-in-C-Sharp/)
+  - [C# Arrays](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/arrays)
+  - [Generic Collections: List<T>](https://learn.microsoft.com/en-us/dotnet/api/system.collections.generic.list-1?view=net-8.0)
+  - [Enumeratos in C#](https://www.c-sharpcorner.com/article/enumerators-in-C-Sharp/)
